@@ -96,23 +96,28 @@
   <section class="cubby">
     <h2>Send Us a Message</h2>
 
-  <form action="https://formsubmit.co/aabba8e93942ddd066ec51142a717054" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
+<form action="https://api.web3forms.com/submit" method="POST">
+  
+  <!-- Your Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="d30c7cc3-3da9-4b44-913b-38eac7ceacfc">
+
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+      </div>
+      <div class="col">
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
       </div>
     </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-  </form>
-</div>
+  </div>
+
+  <div class="form-group">
+    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+</form>
 
 </div>
 
